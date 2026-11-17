@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rufeng-wanli
+    runtime: node
+    plan: free
+    buildCommand: "npm install --omit=dev"
+    startCommand: "node server/index.js"
+    healthCheckPath: /healthz
+    autoDeploy: true
+    numInstances: 1
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: AUTOPILOT_DELAY_MS
+        value: "45000"

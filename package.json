@@ -1,0 +1,24 @@
+{
+  "name": "rufeng-wanli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "儒风万里 · 孔子文化主题多人飞行棋",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test tests/engine.test.js tests/server.test.js",
+    "check": "node --check server/index.js"
+  },
+  "keywords": [
+    "confucian",
+    "ludo",
+    "board-game",
+    "multiplayer",
+    "education"
+  ],
+  "license": "SEE LICENSE IN LICENSE"
+}
